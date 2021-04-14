@@ -1,9 +1,9 @@
 .low {
-  border: 3px solid green;
+  border: 3px solid rgb(19, 226, 19);
   padding: 10px;
 }
 .medium {
-  border: 3px solid yellow;
+  border: 3px solid rgb(255, 238, 5);
   padding: 10px;
 }
 .high {

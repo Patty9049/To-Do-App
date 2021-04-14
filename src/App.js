@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { v4 as uuidv4 } from "uuid";
 import AddToDoForm from "./components/AddToDoForm/AddToDoForm";
 import TodoList from "./components/TodoList/TodoList";
+import styles from "./App.module.css";
 
 class App extends Component {
   state = {
@@ -58,7 +59,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div className={styles.app}>
         <h1>Todo App</h1>
         <AddToDoForm addToDo={this.addToDo} />
         <TodoList
@@ -66,7 +67,7 @@ class App extends Component {
           removeToDo={this.removeToDo}
           completeTodo={this.completeTodo}
         />
-      </>
+      </div>
     );
   }
 }

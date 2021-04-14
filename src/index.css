@@ -2,4 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-color: rgb(241, 241, 237);
 }

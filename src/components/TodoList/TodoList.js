@@ -4,7 +4,7 @@ import "./TodoList.css";
 const TodoList = ({ todoList, removeToDo, completeTodo }) => {
   return (
     <>
-      <h1>TO DO LIST</h1>
+      <h1>Todo List</h1>
       <ul>
         {todoList.map((todo) => {
           const {
