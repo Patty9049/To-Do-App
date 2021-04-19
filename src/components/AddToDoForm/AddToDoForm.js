@@ -20,7 +20,7 @@ const AddToDoForm = ({ addToDo }) => {
         <option value="high">high</option>
       </select>
 
-      <button type="submit">add todo</button>
+      <button type="submit">+ add todo</button>
     </form>
   );
 };
