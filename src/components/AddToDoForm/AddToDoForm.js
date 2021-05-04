@@ -1,17 +1,22 @@
 import React from "react";
-// import { Grid, Col } from "react-flexbox-grid";
 import styles from "./AddToDoForm.module.css";
 
 const AddToDoForm = ({ addToDo }) => {
   return (
     <form className={styles.form} onSubmit={addToDo}>
-      <input type="text" name="toDoTitle" placeholder="Type to do title.." />
+      <input
+        type="text"
+        name="toDoTitle"
+        placeholder="Type to do title.."
+        required
+      />
       <textarea
         type="text"
         name="toDoContent"
         placeholder="Type to do content.."
         cols="30"
         rows="10"
+        required
       />
       <label htmlFor="toDoPriority">Choose todo priority: </label>
       <select name="toDoPriority" id="toDoPriority">
@@ -20,7 +25,9 @@ const AddToDoForm = ({ addToDo }) => {
         <option value="high">high</option>
       </select>
 
-      <button type="submit">+ add todo</button>
+      <button className={styles.btn} type="submit">
+        + add todo
+      </button>
     </form>
   );
 };
