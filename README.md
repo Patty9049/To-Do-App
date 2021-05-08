@@ -1,6 +1,6 @@
 # Todo App
 
-overview
+A simple single-page application for creating a TodoList. A single task can be edited, deleted and prioritized as shown by the color of the frame.
 
 ## Live version: https://todoapp-react-project.netlify.app/
 
